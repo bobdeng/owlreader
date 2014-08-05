@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListItemH2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutEn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtPhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp" 
+            style="@style/ListItemNormal1"/>
+
+        <ImageView
+            android:id="@+id/imgVoiceEn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/speaker" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtPham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            style="@style/ListItemNormal1" />
+
+        <ImageView
+            android:id="@+id/imgVoiceAm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/speaker" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtParts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListItemNormal1" />
+
+</LinearLayout>

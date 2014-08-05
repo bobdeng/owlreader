@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<ListView android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    style="@style/ListView"
+	    android:id="@+id/listBook">
+	    
+	</ListView>
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/ButtonBar"
+	    android:padding="5dp"
+	    android:orientation="horizontal">
+	     <Button android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/newword_button"
+	        android:layout_weight="1"
+	        style="@style/Button"
+	        android:id="@+id/btnNewword"/>
+	    <Button android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="分享"
+	        android:layout_weight="1"
+	        style="@style/Button"
+	        android:id="@+id/btnShare"/>
+	     <Button android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="支持"
+	        android:layout_weight="1"
+	        style="@style/Button"
+	        android:visibility="gone"
+	        android:id="@+id/btnSupport"/>
+		 <Button android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="更多.."
+	        style="@style/Button"
+	        android:layout_weight="1"
+	        android:id="@+id/btnMore"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<factorypath>
+    <factorypathentry kind="WKSPJAR" id="/ERead/compile-lib/androidannotations-3.0.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/ERead/libs/androidannotations-api-3.0.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/ERead/libs/cyclops.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>

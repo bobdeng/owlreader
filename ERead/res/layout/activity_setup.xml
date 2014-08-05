@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    style="@style/Body">
+     <TextView 
+        android:text="调整阅读字体及大小"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextNormal1"
+    />
+    <TextView 
+        android:text="The quick brown fox jumps over a lazy dog"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:id="@+id/txtSample"
+    />
+
+    <SeekBar
+        android:id="@+id/skbFontSize"
+        android:max="28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        style="@style/SeekBar"
+        />
+	
+    <Spinner
+        android:id="@+id/spnFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/spnTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    	
+</LinearLayout>

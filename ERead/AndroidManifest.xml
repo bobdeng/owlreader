@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.dengzhiguo.eread"
+    android:versionCode="11"
+    android:versionName="1.0.11" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name=".MainApp_"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" 
+        android:theme="@style/MyTheme">
+        <activity
+            android:name="cn.dengzhiguo.eread.activity.BookActivity_"
+            android:label="book"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.dengzhiguo.eread.activity.NewwordActivity_"
+            android:label="@string/newword_title"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="cn.dengzhiguo.eread.activity.SetupActivity_"
+            android:label="@string/setup_title"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="cn.dengzhiguo.eread.activity.ScanFileActivity_"
+            android:label="@string/scan_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.dengzhiguo.eread.activity.MainActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53cf805256240bec3200502a" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+        <!-- service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver-->
+    </application>
+
+</manifest>
