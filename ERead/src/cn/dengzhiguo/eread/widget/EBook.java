@@ -56,7 +56,7 @@ public class EBook extends View {
 	private boolean painting = false;
 	private boolean pining=false;
 	private Bitmap pinBitmap;
-	private int paintingColor = 0xff7cfa00;
+	private int paintingColor = 0x807cfa00;
 	private OnPaintUpdate onPaintUpdate;
 	private OnObjectEvent onObjectEvent;
 	private List<PinData> listPin=new ArrayList<PinData>();
@@ -356,7 +356,7 @@ public class EBook extends View {
 		float top = line * lineHeight+ linePadding;
 		float height = lineHeight;
 		float right = this.getStringWidth(lineString.substring(0, endChar));
-		canvas.drawRect(left + mMoveX, top, right + mMoveX, top + height-linePadding, paint);
+		canvas.drawRect(left + mMoveX, top+linePadding , right + mMoveX, top + height, paint);
 	}
 
 	private void paintText(Canvas canvas) {
@@ -868,6 +868,7 @@ public class EBook extends View {
 
 	public void setTxtFile(File txtFile) {
 		this.txtFile = txtFile;
+		this.invalidate();
 	}
 
 	public OnBookSetOver getOnBookSetOver() {

@@ -33,11 +33,9 @@ public class WordView extends LinearLayout {
 	Newword mNewword;
 	public WordView(Context context) {
 		super(context);
-		//mvc=new MVCAdapter(context);
 	}
 	public void bind(Newword word){
 		this.mNewword=word;
-		//mvc.register(this);
 		txtParts.setText(word.getParts());
 		txtWord.setText(word.getWord());
 		txtPhen.setText(String.format("[英：%s]",word.getEn()));
@@ -53,8 +51,8 @@ public class WordView extends LinearLayout {
 	private void playvoice(String url){
 		if(url!=null)
 		{
+			//System.out.println("start:"+url);
 			translate.playvoice(url);
-			//mvc.invokeAction(TranslateAction_.class, "playvoice", new Intent().putExtra("url",url), null, false,1);
 		}
 		else
 			Toast.makeText(this.getContext(), "没有语音", Toast.LENGTH_SHORT).show();
